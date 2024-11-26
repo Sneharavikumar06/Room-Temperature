@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 1.8em;
+}
+
+/* Room list container */
+.room-list {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-list h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.room-list h2 i {
+    margin-left: 10px;
+}
+
+/* List items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.1em;
+}
+
+li:hover {
+    background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Temperature display container */
+.temperature-display {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.temperature-display h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.4em;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.temperature-display h3 i {
+    margin-left: 10px;
+}
+
+#temperature-output {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+li {
+    animation: fadeIn 0.6s ease-in-out;
+}
